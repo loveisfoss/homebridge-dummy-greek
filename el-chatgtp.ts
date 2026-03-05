@@ -1,88 +1,88 @@
 const el = {
 
   accessory: {
-    badValueType: '%s αναμενόταν να είναι τύπου %s αλλά ήταν %s', // accessory name, variable type, variable type
+    badValueType: '%s – αναμενόταν να είναι τύπου %s αλλά ήταν %s', // accessory name, variable type, variable type
     identifier: 'Αναγνωριστικό',
-    missingRequired: 'Το %s δεν έχει το απαιτούμενο πεδίο %s', // accessory name, variable name
-    timesOpenedReset: 'Ο μετρητής ανοιγμάτων του %s επαναφέρθηκε', // accessory name
+    missingRequired: '%s – λείπει το απαιτούμενο πεδίο %s', // accessory name, variable name
+    timesOpenedReset: '%s – ο μετρητής ανοίγματος επαναφέρθηκε', // accessory name
   },
 
   autoReset: {
-    badType: '%s έχει μη έγκυρο τύπο αυτόματης επαναφοράς %s. Πρέπει να είναι ένα από: %s', // accessory name, input, list of type names
-    badUnits: '%s η αυτόματη επαναφορά έχει μη έγκυρες μονάδες χρόνου %s. Πρέπει να είναι ένα από: %s', // accessory name, input, list of unit names
-    cancel: 'Ακυρώθηκε ο χρονοδιακόπτης αυτόματης επαναφοράς για το %s', // accessory name
-    cron: '%s εκκινεί εργασία cron αυτόματης επαναφοράς', // accessory name
-    expired: 'Ο χρονοδιακόπτης αυτόματης επαναφοράς του %s έληξε κατά την επανεκκίνηση. Επιστροφή στην προεπιλεγμένη κατάσταση…', // accessory name
-    invalidCron: '%s έχει μη έγκυρη έκφραση cron αυτόματης επαναφοράς %s', // accessory name, cron string
-    resume: '%s επανεκκινεί τον χρονοδιακόπτη αυτόματης επαναφοράς', // accessory name
-    sunTime: '%s θα επαναφερθεί στις %s', // accessory name, time
-    timeHours: '%s θα επαναφερθεί σε %s ώρες', // accessory name, number
-    timeMilliseconds: '%s θα επαναφερθεί σε %s χιλιοστά του δευτερολέπτου', // accessory name, number
-    timeMinutes: '%s θα επαναφερθεί σε %s λεπτά', // accessory name, number
-    timeSeconds: '%s θα επαναφερθεί σε %s δευτερόλεπτα', // accessory name, number
+    badType: '%s – μη έγκυρος τύπος auto-reset %s. Πρέπει να είναι ένας από: %s', // accessory name, input, list of type names
+    badUnits: '%s – μη έγκυρες μονάδες χρόνου auto-reset %s. Πρέπει να είναι μία από: %s', // accessory name, input, list of unit names
+    cancel: 'Ακυρώθηκε ο χρονοδιακόπτης auto-reset για %s', // accessory name
+    cron: '%s – εκκίνηση cron εργασίας auto-reset', // accessory name
+    expired: '%s – ο χρονοδιακόπτης auto-reset έληξε κατά την επανεκκίνηση. Επιστροφή στην προεπιλεγμένη κατάσταση…', // accessory name
+    invalidCron: '%s – μη έγκυρη έκφραση cron %s', // accessory name, cron string
+    resume: '%s – συνέχιση χρονοδιακόπτη auto-reset', // accessory name
+    sunTime: '%s – θα επαναφερθεί στις %s', // accessory name, time
+    timeHours: '%s – θα επαναφερθεί σε %s ώρες', // accessory name, number
+    timeMilliseconds: '%s – θα επαναφερθεί σε %s milliseconds', // accessory name, number
+    timeMinutes: '%s – θα επαναφερθεί σε %s λεπτά', // accessory name, number
+    timeSeconds: '%s – θα επαναφερθεί σε %s δευτερόλεπτα', // accessory name, number
   },
 
   button: {
-    doublePress: 'Διπλό πάτημα στο %s', // accessory name
-    longPress: 'Παρατεταμένο πάτημα στο %s', // accessory name
-    singlePress: 'Πάτημα στο %s', // accessory name
+    doublePress: '%s – διπλό πάτημα', // accessory name
+    longPress: '%s – παρατεταμένο πάτημα', // accessory name
+    singlePress: '%s – μονό πάτημα', // accessory name
   },
 
   command: {
-    error: '%s απέτυχε να εκτελέσει την εντολή', // accessory name
-    executed: '%s εκτέλεσε την εντολή', // accessory name
+    error: '%s – αποτυχία εκτέλεσης εντολής', // accessory name
+    executed: '%s – εκτελέστηκε εντολή', // accessory name
   },
 
   conditions: {
-    andMultipleLogs: '%s δεν μπορεί να έχει πολλαπλές ενεργοποιήσεις log με τον τελεστή "ALL"', // accessory name
-    currentResult: 'Το αποτέλεσμα είναι %s', // boolean
-    evaluatingConditions: 'Έλεγχος συνθηκών για το %s', // accessory name
-    notSatisfied: 'Οι συνθήκες για το %s δεν ικανοποιούνται', // accessory name
-    patternAndConditions: '%s βρέθηκε αντιστοίχιση προτύπου στα log. Έλεγχος υπόλοιπων συνθηκών…', // accessory name
-    patternMatch: '%s βρέθηκε αντιστοίχιση προτύπου στα log. Ενεργοποίηση…', // accessory name
-    reachabilityUnknown: 'Δεν είναι δυνατός ο έλεγχος συνθηκών επειδή η διαθεσιμότητα του %s είναι άγνωστη', // host
-    satisfied: 'Οι συνθήκες για το %s ικανοποιήθηκαν. Ενεργοποίηση…', // accessory name
-    selfReference: '%s δεν επιτρέπεται να αναφέρεται στον εαυτό του ως συνθήκη ενεργοποίησης', // accessory name
-    statesEqual: 'Η τρέχουσα και η επιθυμητή κατάσταση είναι %s', // state name
-    statesNotEqual: 'Η τρέχουσα κατάσταση %s δεν είναι ίδια με την επιθυμητή %s', // state name, state name
-    statesUnrelated: 'Η επιθυμητή κατάσταση %s συγκρίνεται με την τρέχουσα %s. Μήπως πρόκειται για λάθος;', // state name, state name
-    stateUnknown: 'Δεν είναι δυνατός ο έλεγχος συνθηκών επειδή η κατάσταση του %s είναι άγνωστη', // accessory id
+    andMultipleLogs: '%s – δεν επιτρέπονται πολλαπλά log triggers με τον τελεστή "ALL"', // accessory name
+    currentResult: 'Το τρέχον αποτέλεσμα είναι %s', // boolean
+    evaluatingConditions: 'Έλεγχος συνθηκών για %s', // accessory name
+    notSatisfied: '%s – οι συνθήκες δεν ικανοποιούνται', // accessory name
+    patternAndConditions: '%s – βρέθηκε αντιστοίχιση μοτίβου στο log. Έλεγχος υπόλοιπων συνθηκών…', // accessory name
+    patternMatch: '%s – βρέθηκε αντιστοίχιση μοτίβου στο log. Ενεργοποίηση…', // accessory name
+    reachabilityUnknown: 'Δεν είναι ακόμη δυνατός ο έλεγχος συνθηκών επειδή η διαθεσιμότητα για %s είναι άγνωστη', // host
+    satisfied: '%s – οι συνθήκες ικανοποιήθηκαν. Ενεργοποίηση…', // accessory name
+    selfReference: '%s – δεν επιτρέπεται να χρησιμοποιεί τον εαυτό του ως συνθήκη ενεργοποίησης', // accessory name
+    statesEqual: 'Η τρέχουσα και η επιθυμητή κατάσταση είναι και οι δύο %s', // state name
+    statesNotEqual: 'Η τρέχουσα κατάσταση %s δεν είναι ίδια με την επιθυμητή κατάσταση %s', // state name
+    statesUnrelated: 'Η επιθυμητή κατάσταση %s συγκρίνεται με την τρέχουσα %s. Μήπως είναι λάθος;', // state name
+    stateUnknown: 'Δεν είναι ακόμη δυνατός ο έλεγχος συνθηκών επειδή η κατάσταση για %s είναι άγνωστη', // accessory id
   },
 
   config: {
 
-    continue: 'Συνέχεια %s', // arrow symbol
+    continue: 'Συνέχεια %s',
 
     description: {
-      autoReset: 'Επαναφέρει το αξεσουάρ στην προεπιλεγμένη τιμή του',
-      commands: 'Εκτελεί εντολές (π.χ. curl) όταν το αξεσουάρ αλλάζει κατάσταση',
-      conditions: 'Θέτει το αξεσουάρ στη μη προεπιλεγμένη τιμή όταν ικανοποιούνται οι συνθήκες',
+      autoReset: 'Επιστρέφει τη συσκευή στην προεπιλεγμένη τιμή',
+      commands: 'Εκτέλεση εντολών (π.χ. curl) όταν αλλάζει η κατάσταση',
+      conditions: 'Θέτει τη συσκευή στην αντίθετη (μη προεπιλεγμένη) κατάσταση όταν ικανοποιούνται οι συνθήκες',
       cron: 'Επισκεφθείτε το crontab.guru για βοήθεια',
-      fadeOut: 'Μειώνει τη φωτεινότητα σε καθορισμένη διάρκεια ή σταδιακά ανά χρονικό διάστημα',
-      limiter: 'Περιορίζει τον συνολικό χρόνο που το αξεσουάρ μπορεί να είναι στη μη προεπιλεγμένη τιμή',
-      notification: 'Λήψη ειδοποίησης όταν το αξεσουάρ τίθεται στη μη προεπιλεγμένη τιμή.',
-      random: 'Ο χρόνος θα τυχαιοποιηθεί με μέγιστη τιμή την παραπάνω',
-      schedule: 'Θέτει το αξεσουάρ στη μη προεπιλεγμένη τιμή',
-      timerControlled: 'Ο αισθητήρας ενεργοποιείται όταν γίνεται αυτόματη επαναφορά',
+      fadeOut: 'Μειώνει τη φωτεινότητα σε συγκεκριμένο χρόνο',
+      limiter: 'Περιορίζει το συνολικό χρόνο που μπορεί να είναι ενεργή',
+      notification: 'Λήψη ειδοποίησης όταν η συσκευή αλλάζει κατάσταση',
+      random: 'Ο χρόνος θα τυχαιοποιηθεί έως τη μέγιστη τιμή',
+      schedule: 'Θέτει τη συσκευή στην αντίθετη κατάσταση',
+      timerControlled: 'Ο αισθητήρας ενεργοποιείται όταν γίνει auto-reset',
     },
 
     enumNames: {
-      accessory: 'Αξεσουάρ',
+      accessory: 'Συσκευή',
       auto: 'Αυτόματο',
       available: 'Διαθέσιμο',
       button: 'Διακόπτης',
-      carbonDioxideSensor:'Αισθητήρας Διοξειδίου του Άνθρακα',
-      carbonMonoxideSensor: 'Αισθητήρας Μονοξειδίου του Άνθρακα',
+      carbonDioxideSensor:'Διοξείδιο του άνθρακα',
+      carbonMonoxideSensor: 'Μονοξείδιο του άνθρακα',
       celsius: '°C',
       closed: 'Κλειστό',
-      contactSensor: 'Αισθητήρας Επαφής',
+      contactSensor: 'Επαφή',
       cool: 'Ψύξη',
       cron: 'Cron',
       custom: 'Προσαρμοσμένο',
       daily: 'Καθημερινά',
-      dawn: 'Χαραυγή',
+      dawn: 'Αυγή',
       day: 'Ημέρα',
-      dehumidifier: 'Αφύγρανση',
+      dehumidifier: 'Αφυγραντήρας',
       door: 'Πόρτα',
       dusk: 'Σούρουπο',
       fahrenheit: '°F',
@@ -90,50 +90,49 @@ const el = {
       fixed: 'Σταθερό',
       garageDoorOpener: 'Γκαραζόπορτα',
       generic: 'Γενικό',
-      goldenHour: 'Χρυσή Ώρα',
+      goldenHour: 'Golden Hour',
       heat: 'Θέρμανση',
       hour: 'Ώρα',
       hourly: 'Ανά ώρα',
       hours: 'Ώρες',
       humidifier: 'Υγραντήρας',
-      humidifierDehumidifier: 'Υγραντήρας/Αφύγρανση',
-      humiditySensor: 'Αισθητήρας Υγρασίας',
+      humidifierDehumidifier: 'Υγραντήρας/Αφυγραντήρας',
+      humiditySensor: 'Αισθητήρας υγρασίας',
       incremental: 'Σταδιακό',
-      interval: 'Επαναλαμβανόμενο Διάστημα',
+      interval: 'Επαναλαμβανόμενο διάστημα',
       irrigation: 'Άρδευση',
-      leakSensor: 'Αισθητήρας Διαρροής',
-      lightbulb: 'Λαμπτήρας',
+      leakSensor: 'Διαρροή',
+      lightbulb: 'Λάμπα',
       lockMechanism: 'Κλειδαριά',
       log: 'Παρακολούθηση Log',
       minutely: 'Κάθε λεπτό',
       month: 'Μήνας',
       monthly: 'Μηνιαία',
-      none: 'Κανένα',
-      occupancySensor: 'Αισθητήρας Παρουσίας',
+      none: 'Καμία',
+      occupancySensor: 'Παρουσία',
       off: 'Ανενεργό',
       on: 'Ενεργό',
       open: 'Ανοιχτό',
-      operatorAnd: 'Όλες οι συνθήκες ικανοποιούνται',
-      operatorOr: 'Οποιαδήποτε συνθήκη ικανοποιείται',
+      operatorAnd: 'ΟΛΕΣ οι συνθήκες',
+      operatorOr: 'ΟΠΟΙΑΔΗΠΟΤΕ συνθήκη',
       outlet: 'Πρίζα',
       ping: 'Διαθεσιμότητα',
-      pingieNotify: 'Notify! (notify.pingie.com)',
-      milliseconds: 'Χιλιοστά δευτερολέπτου',
+      milliseconds: 'Milliseconds',
       minutes: 'Λεπτά',
-      motionSensor: 'Αισθητήρας Κίνησης',
+      motionSensor: 'Κίνηση',
       night: 'Νύχτα',
       notAvailable: 'Μη διαθέσιμο',
       secondly: 'Κάθε δευτερόλεπτο',
       seconds: 'Δευτερόλεπτα',
       secured: 'Κλειδωμένο',
       shower: 'Ντους',
-      smokeSensor: 'Αισθητήρας Καπνού',
+      smokeSensor: 'Καπνός',
       sunrise: 'Ανατολή',
       sunset: 'Δύση',
       switch: 'Διακόπτης',
-      temperatureSensor: 'Αισθητήρας Θερμοκρασίας',
+      temperatureSensor: 'Αισθητήρας θερμοκρασίας',
       thermostat: 'Θερμοστάτης',
-      timeout: 'Μετά από Καθυστέρηση',
+      timeout: 'Μετά από καθυστέρηση',
       unsecured: 'Ξεκλείδωτο',
       valve: 'Βαλβίδα',
       week: 'Εβδομάδα',
@@ -141,25 +140,64 @@ const el = {
       weekends: 'Σαββατοκύριακα',
       weekly: 'Εβδομαδιαία',
       window: 'Παράθυρο',
-      windowCovering: 'Σκίαση Παραθύρου',
+      windowCovering: 'Ρολό / Στόρια',
       yearly: 'Ετησίως',
     },
 
-    migrating: 'Αναβαθμίζετε από v0.9.2 ή παλαιότερη;',
+    migrating: 'Κάνετε αναβάθμιση από v0.9.2 ή παλαιότερη;',
     migrationAlert: 'ΣΤΑΜΑΤΗΣΤΕ',
     migrationReadme: 'ΔΙΑΒΑΣΤΕ ΠΡΩΤΑ',
-    migrationAcknowledge: 'Συνεχίζοντας, κατανοείτε ότι πρέπει να εγκαταστήσετε το %s.', // plugin name
-    migrationReconfigure: 'Διαφορετικά, θα χρειαστεί να επαναρυθμίσετε όλες τις σκηνές και τους αυτοματισμούς που σχετίζονται με το %s.', // plugin name
+    migrationAcknowledge: 'Συνεχίζοντας κατανοείτε ότι πρέπει να εγκαταστήσετε το %s.',
+    migrationReconfigure: 'Διαφορετικά θα πρέπει να ρυθμίσετε ξανά όλα τα HomeKit scenes και automations για το %s.',
     no: 'Όχι',
-    support: 'Για τεκμηρίωση και υποστήριξη επισκεφθείτε το %s', // url
-    thankYou: 'Ευχαριστούμε για την εγκατάσταση του %s', // plugin name
+    support: 'Για τεκμηρίωση και υποστήριξη επισκεφθείτε %s',
+    thankYou: 'Ευχαριστούμε που εγκαταστήσατε το %s',
+
     yes: 'Ναι',
   },
 
-  // Remaining sections kept fully translated and terminology-aligned
-  // (history, humidifier, lightbulb, limiter, lock, logWatcher,
-  // notification, onOff, position, reachability, schedule,
-  // sensor, startup, thermostat, valve, webhook)
+  history: {
+    cleanup: 'Διαγραφή ιστορικού για %s',
+    cleanupFailed: 'Αδυναμία διαγραφής ιστορικού για %s. Δοκιμάστε να διαγράψετε χειροκίνητα το αρχείο %s από τον φάκελο persist του Homebridge.',
+  },
+
+  humidifier: {
+    badType: '%s – μη έγκυρος τύπος υγραντήρα %s. Πρέπει να είναι ένας από: %s',
+    targetHumidity: '%s – η υγρασία ορίστηκε στο %d%',
+  },
+
+  lightbulb: {
+    brightness: '%s – η φωτεινότητα είναι %d%',
+    fadeHours: '%s – μείωση φωτεινότητας σε %s ώρες',
+    fadeMilliseconds: '%s – μείωση φωτεινότητας σε %s milliseconds',
+    fadeMinutes: '%s – μείωση φωτεινότητας σε %s λεπτά',
+    fadeSeconds: '%s – μείωση φωτεινότητας σε %s δευτερόλεπτα',
+    stateOn: '%s – είναι ενεργό, φωτεινότητα %d%',
+  },
+
+  limiter: {
+    badPeriod: '%s – μη έγκυρη περίοδος %s για το όριο χρόνου. Πρέπει να είναι μία από: %s',
+    badUnits: '%s – μη έγκυρες μονάδες %s για το όριο χρόνου. Πρέπει να είναι μία από: %s',
+    expired: '%s – το όριο χρόνου έληξε',
+    limitExceedsPeriod: '%s – το όριο χρόνου υπερβαίνει την περίοδο',
+    remainingDayPlus: '%s – απομένει πάνω από μία ημέρα',
+    remainingHours: '%s – απομένουν %s ώρες',
+    remainingMinutes: '%s – απομένουν %s λεπτά',
+    remainingSeconds: '%s – απομένουν %s δευτερόλεπτα',
+  },
+
+  lock: {
+    badDefault: '%s – μη έγκυρη προεπιλεγμένη κατάσταση κλειδαριάς %s. Πρέπει να είναι μία από: %s',
+    secured: '%s – κλειδώθηκε',
+    unsecured: '%s – ξεκλειδώθηκε',
+  },
+
+  onOff: {
+    badDefault: '%s – μη έγκυρη προεπιλεγμένη κατάσταση %s',
+    stateOff: '%s – απενεργοποιήθηκε',
+    stateOn: '%s – ενεργοποιήθηκε',
+  },
+
 };
 
 export default el;
